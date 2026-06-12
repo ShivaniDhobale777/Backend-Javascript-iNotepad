@@ -1,3 +1,9 @@
+
+require('dotenv').config();
+
+console.log("ENV =", process.env);
+console.log("JWT_SECRET =", process.env.JWT_SECRET);
+
 const express = require("express");
 const connectToMongo = require("./db");
 
